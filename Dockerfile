@@ -1,6 +1,10 @@
+# Download base image ubuntu 23.04
 FROM ubuntu:latest
+# information about the image
 LABEL authors="younes"
+LABEL description="This is a custom Docker Image for nodejs and Nginx."
 
+#first command to be executed when container runs
 ENTRYPOINT ["top", "-b"]
 
 # Node config
